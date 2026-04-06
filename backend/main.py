@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-validate_config()
+#validate_config()
 
 app.include_router(money_health.router,     prefix="/api", tags=["Money Health Score"])
 app.include_router(fire_planner.router,     prefix="/api", tags=["FIRE Path Planner"])
